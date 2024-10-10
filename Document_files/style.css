@@ -1,0 +1,569 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap") 
+
+* {  
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(35, 35, 85);
+}
+
+span {
+  font-size: 0.9rem;
+  color: #757373;
+}
+
+h6 {
+  font-size: 1.1rem;
+  color: rgb(24, 24, 49);
+}
+
+nav {
+  position: fixed;
+  z-index: 99;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1vw 8vw;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  padding-right: 10vw;
+}
+
+nav img {
+  width: 150px;
+  cursor: pointer;
+}
+
+nav .navigation {
+  display: flex;
+}
+
+#menu-btn {
+  width: 10px;
+  height: 10px;
+  display: none;
+}
+
+#menu-close {
+  display: none;
+}
+
+nav.navigation{
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+nav .navigation ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+nav .navigation ul li {
+  list-style: none;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+nav .navigation ul li a {
+  text-decoration: none;
+  color: rgb(21, 21, 100);
+  font-size: large;
+  font-weight: 500;
+}
+nav .navigation ul li a:hover {
+  color: rgb(228, 165, 72);
+}
+
+#home {
+  background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
+    url("images/back.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#home h2 {
+  color: white;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  padding-top: 250px;
+}
+
+#home p {
+  width: 50%;
+  color: white;
+  font-size: 0.9rem;
+  line-height: 25px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+#home a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 13px 35px;
+  background-color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+#home a.blue {
+  color: white;
+  background-color: rgb(21, 21, 100);
+  transition: 0.3s ease;
+}
+
+#home a.blue:hover {
+  color: rgb(21, 21, 100);
+  background-color: white;
+}
+
+#home a.yellow {
+  color: white;
+  background-color: #fdc938;
+  transition: 0.3s ease;
+}
+
+#home a.yellow:hover {
+  color: rgb(21, 21, 100);
+  background-color: white;
+}
+
+/* Features */
+
+#features {
+  padding: 5vw 8vw 0 8vw;
+  text-align: center;
+}
+
+#features h1 {
+  font-size: 2.2rem;
+}
+
+#features p {
+  font-size: 1.2rem;
+  padding-bottom: 35px;
+}
+
+#features .fea-box {
+  background-color: #f9f9ff;
+  text-align: start;
+}
+
+#features .fea-base {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+
+#features .fea-box i {
+  font-size: 2.3rem;
+  color: rgb(44, 44, 80);
+  background-color: rgb(226, 226, 226);
+}
+
+#features .fea-box h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(46, 46, 59);
+  padding: 13px 0 7px 0;
+  letter-spacing: 1px;
+}
+
+#features .fea-box p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: rgb(70, 70, 87);
+  padding: 13px 0 7px 0;
+  letter-spacing: 1px;
+}
+
+/* Courses */
+
+#courses {
+  padding: 8vw 8vw 0 8vw;
+  text-align: center;
+}
+
+#courses .course-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+
+#courses .course {
+  text-align: start;
+  background: #f9f9ff;
+  height: 100%;
+  position: relative;
+}
+
+#courses .course img {
+  width: 100%;
+  height: 60%;
+  background-size: cover;
+  background-position: center;
+}
+
+#courses .course .details {
+  padding: 30px 15px 0 15px;
+}
+
+#courses .course .details i {
+  color: #fdc938;
+  font-size: 0.9rem;
+}
+
+#courses .course .details .cost {
+  background-color: rgb(74, 74, 136);
+  color: #fff;
+  line-height: 70px;
+  width: 70px;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  bottom: 130px;
+}
+
+/*Registration*/
+
+#registration {
+  margin-top: 40px;
+  padding: 6vw 8vw 6vw 8vw;
+  background-image: linear-gradient(
+      rgba(99, 112, 168, 0.5),
+      rgba(81, 91, 233, 0.5)
+    ),
+    url("images/signup.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#registration .reminder {
+  color: #fff;
+}
+
+#registration .reminder h1 {
+  color: #fff;
+}
+
+#registration .reminder .time {
+  display: flex;
+  margin-top: 40px;
+}
+
+#registration .reminder .time .days {
+  text-align: center;
+  padding: 13px 33px;
+  background: rgb(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  margin: 0 5px 10px 5px;
+  border: 2px solid rgba(225, 225, 225, 0.18);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+#registration .form {
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  box-shadow: 0 8px 32px 0 rgb(31, 38, 135, 0.37);
+  margin-right: 50px;
+}
+
+#registration .form .btn {
+  margin-top: 20px;
+}
+
+#registration .form input {
+  margin: 15px 0;
+  border: 1px solid rgba(84, 40, 241);
+  padding: 15px 10px;
+  outline: none;
+}
+
+#registration a.yellow {
+  color: white;
+  background-color: #fdc938;
+  transition: 0.3s ease;
+}
+
+#registration a.yellow:hover {
+  color: rgb(21, 21, 100);
+  background-color: white;
+}
+
+#registration.form a.yellow {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 13px 35px;
+  background-color: white;
+  font-weight: 800;
+}
+
+#experts {
+  padding: 8vw 8vw 0 8vw;
+  text-align: center;
+}
+
+#experts .expert-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+  margin-top: 50px;
+}
+
+#experts .expert-box .profile {
+  background-color: #fafaf1;
+  padding: 30px 10px;
+}
+
+.pro-links {
+  margin-top: 10px;
+}
+
+.pro-links i {
+  padding: 10px 13px;
+  border: 1px solid rgb(21, 21, 100);
+}
+
+.pro-links i:hover {
+  background-color: rgb(21, 21, 100);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+footer {
+  padding: 8vw;
+  background-color: #101c32;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+footer .footer-col {
+  padding-bottom: 40px;
+}
+
+footer h3 {
+  color: #fff;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+footer li {
+  list-style: none;
+  color: #7b838a;
+  padding: 10px 0;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+footer li:hover {
+  color: rgb(241, 240, 245);
+}
+
+footer p {
+  color: #7b838a;
+  margin-bottom: 20px;
+}
+
+footer input {
+  width: 220px;
+  padding: 15px 12px;
+  background: #334f6c;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+footer .subscribe a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 12px 15px;
+  font-weight: 600;
+}
+
+footer .subscribe a.yellow {
+  color: #2c2c2c;
+  background-color: #fdc938;
+  transition: 0.3s ease;
+}
+
+footer .subscribe a.yellow:hover {
+  color: rgb(21, 21, 100);
+  background-color: white;
+}
+
+@media (max-width: 769px) {
+  nav {
+    padding: 15px 20px;
+  }
+  nav img {
+    width: 130px;
+    cursor: pointer;
+  }
+
+  #menu-btn {
+    width: 30px;
+    height: 30px;
+    display: initial;
+  }
+
+  #menu-close {
+    display: initial;
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 30px 20px 20px 20px;
+  }
+
+  nav .navigation ul {
+    position: absolute;
+    top: 0;
+    right: -220px;
+    width: 220px;
+    height: 100vh;
+    backdrop-filter: blur(4.5px);
+    background-color: rgb(17, 20, 104, 0.45);
+    border: rgba(225, 225, 225, 0.18);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: 0.3s ease;
+  }
+
+  nav .navigation ul.active {
+    right: 0;
+  }
+
+  nav .navigation ul li {
+    margin-left: 0;
+    margin: 20px 0 20px 40px;
+  }
+
+  nav .navigation ul li a {
+    color: white;
+  }
+
+  #home p {
+    width: 90%;
+  }
+
+  #home h2 {
+    padding-top: 150px;
+  }
+
+  #features {
+    padding: 8vw 4vw 0 4vw;
+    text-align: center;
+  }
+
+  #courses {
+    z-index: -1;
+    padding: 8vw 4vw 0 4vw;
+    text-align: center;
+  }
+
+  #registration {
+    margin-top: 40px;
+    flex-wrap: wrap;
+    padding: 6vw 4vw 6vw 4vw;
+  }
+
+  #experts {
+    padding: 8vw 8vw 4vw 8vw;
+  }
+
+  .copyright {
+    margin-top: 10px;
+    
+  }
+
+  .copyright .pro-links {
+    margin-top: 10px;
+    padding: 0 8vw 4vw 4vw;
+  }
+}
+
+@media (max-width:475px) {
+
+  #home h2 {
+    padding-top: 200px;
+  }
+
+  #features {
+    padding: 8vw 4vw 0 4vw;
+    text-align: center;
+  }
+
+  #courses p {
+    padding: 4vw 0 4vw 0;
+  }
+
+
+
+  #registration {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  #registration {
+    margin-top: 40px;
+    padding: 6vw 8vw 10vw 8vw;
+  }
+
+  #registration .reminder .time {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+}
+
+
+

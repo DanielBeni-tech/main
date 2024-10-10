@@ -1,0 +1,58 @@
+#sucre{
+    background-image: linear-gradient(rgba(2,9,54,0.3),rgba(5,4,46,0.7)),url("slider_1.jpg");
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+ #sucre h2{
+    color: #eee;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 2.1rem;
+    margin-top: 25px;
+    display: flex;
+    margin-bottom: 15px;
+ }
+ #sucre p{
+    width: 50%;
+    color: #eee;
+    line-height: 25px;
+    font-size: 0.9rem;
+ }
+ #sucre .btn{
+    margin-top: 30px;
+ }
+ #sucre a{
+    font-weight: 600;
+    text-decoration: none;
+    padding: 13px 35px;
+    font-size: .9rem;
+    background: #eee;
+    border-radius: 5px;
+ }
+ #sucre a.blue{
+    color: #fff;
+    background: hsla(197, 75%, 41%, 0.5);
+ }
+ #sucre a.blue:hover{
+    color: #fff;
+    background: hsla(197, 75%, 41%, 0.8);
+ }
+ #sucre a.yellow{
+    background: rgba(255, 255, 255, 0.75);
+    color: hsla(197, 75%, 41%);
+ }
+ #sucre a.yellow:hover{
+    background: rgba(255, 255, 255);
+    color: hsla(197, 75%, 41%);
+ }
+ 
+ @media (max-width:1000px) {
+     
+ }
